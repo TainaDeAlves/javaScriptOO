@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herança</title>
+</head>
+
+<body>
+    <button id="btnImprimir">Imprimir Quadrado</button>
+
+    <script src="forma.js"></script>
+    <script src="quadrado.js"></script>
+    <script>
+        // const forma = new Quadrado(10);
+        // const forma = new Forma("Forma Abstrata");
+        // const forma = new Forma();
+        const forma = new Quadrado(15);
+        document.getElementById('btnImprimir').addEventListener('click', function(){
+            forma.imprimeForma();
+        });
+    </script>
+</body>
+</html>
